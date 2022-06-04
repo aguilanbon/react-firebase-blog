@@ -67,12 +67,12 @@ font-family: 'Ubuntu', sans-serif; */
   height: 25em;
   margin: 0 auto;
   border-radius: .5em;
-  border: 1px solid rgb(24, 24, 24);
+  border: 1px solid rgba(77, 77, 77, .3);
 }
 
 .card-container:hover {
   cursor: pointer;
-  box-shadow: .5em .5em rgb(117, 117, 117);
+  box-shadow: .5em .5em rgba(117, 117, 117, .3);
   margin-top: -.5em;
 } 
 
@@ -89,21 +89,21 @@ font-family: 'Ubuntu', sans-serif; */
 
 .card-container__content {
   font-family: 'Open Sans', sans-serif;
+  padding: 1em;
 }
 
 .card-container__content__title h1 {
-  padding: .5em;
   color: rgb(41, 39, 39);
 }
 
 .card-container__content__body p {
-  padding: 1em; 
   font-size: .85em;
   color: rgb(44, 44, 44);
+  margin-top: 2em;
 }
 
 .card-container__content__footer p {
-  padding: 1em;
   font-size: .8em;
   opacity: .7;
+  margin-top: 2em;
 }
