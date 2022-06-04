@@ -39,7 +39,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 .nav ul li a:hover {
   border-bottom: 1px solid white;
-  opacity: .7;
+  opacity: .8;
 }
 
 /* Home */
@@ -58,16 +58,18 @@ font-family: 'Ubuntu', sans-serif; */
 .blog-card {
   width: 70%;
   margin-top: 2em;
+  height: 25em;
 }
 
 .card-container {
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 25em;
+  height: auto;
   margin: 0 auto;
   border-radius: .5em;
   border: 1px solid rgba(77, 77, 77, .3);
+  padding-bottom: 1em;
 }
 
 .card-container:hover {
@@ -108,7 +110,6 @@ font-family: 'Ubuntu', sans-serif; */
   margin-top: 2em;
 }
 
-
 /* User Form */
 
 .user-form {
@@ -118,5 +119,71 @@ font-family: 'Ubuntu', sans-serif; */
   justify-content: center;
   margin: 0 auto;
   width: 60%;
+  margin-top: 2em;
+}
+
+.form-container {
+  display: flex;
+  padding: 2em;
+  width: 35%;
+  border: 1px solid rgba(77, 77, 77, .3);
+  border-radius: .5em;
+  margin-top: 2em;
+  border-top: .5em solid rgb(64, 64, 194);
+  box-shadow: .5em .5em rgba(117, 117, 117, .3);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
   margin-top: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  padding-left: 1em;
+  opacity: .7;
+}
+
+.form-group .inputBox {
+  height: 2em;
+  padding: 1em;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid rgb(95, 94, 94);
+}
+
+.form-group .inputBox:focus {
+  outline: none;
+  border-color: rgb(54, 54, 238);
+}
+
+.form-group input[type="submit"] {
+  margin-left: auto;
+  padding: 1em;
+  cursor: pointer;
+  margin-top: 1.5em;
+  border: none;
+  width: 30%;
+  background-color: rgb(83, 83, 190);
+  color: white;
+  border-radius: .5em;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: rgb(53, 53, 209);
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  font-size: .8em;
 }

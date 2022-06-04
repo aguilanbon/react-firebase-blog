@@ -4,7 +4,7 @@ import BlogCard from '../components/BlogCard'
 function Home() {
   return (
     <div className='home-container'>
-        <h1 style={{marginTop: '1em'}}>Welcome</h1>
+        <h1 style={{marginTop: '1em', opacity: '.8'}}>Welcome</h1>
         <BlogCard />
     </div>
   )
