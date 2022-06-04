@@ -1,38 +1,109 @@
+
+/* font-family: 'Lobster', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  /* width: 100vw; */
+}
+
+/* NavBar */
+
+.nav {
+  background-color: rgb(31, 31, 31);
+  width: 100vw;
+  padding: 1em;
+}
+
+.nav ul {
+  max-width: 70%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav li {
+  margin: 0 1em;
+} 
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  border-bottom: 1px solid white;
+  opacity: .7;
+}
+
+/* Home */
+
+.home-container {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+/* Card */
+
+.blog-card {
+  width: 70%;
+  margin-top: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 25em;
+  margin: 0 auto;
+  border-radius: .5em;
+  border: 1px solid rgb(24, 24, 24);
+}
+
+.card-container:hover {
+  cursor: pointer;
+  box-shadow: .5em .5em rgb(117, 117, 117);
+  margin-top: -.5em;
+} 
+
+.card-container__image {
+  height: 40%;
+}
+
+.card-container__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5em .5em 0 0;
+}
+
+.card-container__content {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-container__content__title h1 {
+  padding: .5em;
+  color: rgb(41, 39, 39);
+}
+
+.card-container__content__body p {
+  padding: 1em; 
+  font-size: .85em;
+  color: rgb(44, 44, 44);
+}
+
+.card-container__content__footer p {
+  padding: 1em;
+  font-size: .8em;
+  opacity: .7;
 }
