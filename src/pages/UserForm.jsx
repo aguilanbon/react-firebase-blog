@@ -9,11 +9,11 @@ function UserForm() {
             <form action="">
                 <div className="form-group">
                     <label htmlFor="email">Email @</label>
-                    <input type="email" name="email" id="" className='inputBox' />
+                    <input type="email" name="email" id="" className='inputBox' required autoComplete='none'/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password &#8226;&#8226;&#8226; </label>
-                    <input type="password" name="" id="" className='inputBox' />
+                    <input type="password" name="" id="" className='inputBox' required/>
                 </div>
                 <div className="form-group">
                     <input type="submit" value="Log In" />

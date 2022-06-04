@@ -147,7 +147,6 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 .form-group label {
-  padding-left: 1em;
   opacity: .7;
 }
 
@@ -156,11 +155,15 @@ font-family: 'Ubuntu', sans-serif; */
   padding: 1em;
   text-align: center;
   border: none;
-  border-bottom: 2px solid rgb(95, 94, 94);
+  transition: border-color 1s;
+  background-color: rgb(229, 228, 226);
+  margin-top: 1em;
+  border-radius: .2em .2em 0 0;
 }
 
 .form-group .inputBox:focus {
   outline: none;
+  border-bottom: 2px solid;
   border-color: rgb(54, 54, 238);
 }
 
@@ -186,4 +189,5 @@ font-family: 'Ubuntu', sans-serif; */
   justify-content: center;
   margin-top: 1.5em;
   font-size: .8em;
+  opacity: .8;
 }
