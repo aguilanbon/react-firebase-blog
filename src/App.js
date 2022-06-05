@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import MobileNav from './components/MobileNav';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import UserForm from './pages/UserForm';
