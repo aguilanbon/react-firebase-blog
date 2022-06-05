@@ -9,7 +9,7 @@ font-family: 'Ubuntu', sans-serif; */
 .App {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
   /* width: 100vw; */
 }
 
@@ -17,7 +17,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 .nav {
   background-color: rgb(31, 31, 31);
-  width: 100vw;
+  width: 100%;
   padding: 1em;
 }
 
@@ -51,6 +51,7 @@ font-family: 'Ubuntu', sans-serif; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 6em;
 }
 
 /* Card */
@@ -58,7 +59,7 @@ font-family: 'Ubuntu', sans-serif; */
 .blog-card {
   width: 70%;
   margin-top: 2em;
-  height: 25em;
+  min-height: 25em;
 }
 
 .card-container {
@@ -190,4 +191,20 @@ font-family: 'Ubuntu', sans-serif; */
   margin-top: 1.5em;
   font-size: .8em;
   opacity: .8;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1280px){
+  .home-container {
+    width: 80%;
+  }
+
+  .blog-card {
+    width: 70%;
+  }
+
+  .card-container {
+    width: 80%;
+  }
 }
