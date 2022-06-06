@@ -34,8 +34,8 @@ function Navbar({ setFormState }) {
   })
 
   return (
-    <div className="navbar-container" ref={menuRef}>
-      <div className="nav" ref={navRef}>
+    <div className="navbar-container" ref={navRef}>
+      <div className="nav">
         {!showMobileNav &&
           <ul>
             <i onClick={() => setShowMobileNav(true)} id='hamburger-btn' style={{ color: 'white' }} className="fas fa-solid fa-bars"></i>
