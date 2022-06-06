@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar setFormState={setFormState} setIsAuth={setIsAuth} />
+      <Navbar setFormState={setFormState}/>
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/user/login' element={<UserForm setFormState={setFormState} formState={formState} setIsAuth={setIsAuth}/>}></Route>
