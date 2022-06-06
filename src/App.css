@@ -249,11 +249,76 @@ font-family: 'Ubuntu', sans-serif; */
 
 .form-footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 1.5em;
   font-size: .8em;
   opacity: .8;
+}
+
+/* Create Container */
+
+.create-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 5em;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.create-container h1 {
+  opacity: .8;
+}
+
+.create-form-container {
+  display: flex;
+  width: 50%;
+  padding: 1em 4em;
+  margin: 1em auto;
+}
+
+.create-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: .5em .5em rgba(117, 117, 117, .3);
+  border: 1px solid rgba(117, 117, 117, .3);
+  border-top: 4px solid rgb(54, 54, 238);
+  border-radius: .5em;
+  padding: 2em 3em;
+}
+
+.create-form-container form input[type="text"] {
+  height: 2em;
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 1em 0 2em 0;
+}
+
+.create-form-container form input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(53, 53, 209);
+}
+
+.create-form-container form textarea {
+  padding: 1em;
+  margin: 1em 0 2em 0;
+  resize: none;
+}
+
+.create-form-container form input[type="submit"] {
+  padding: 1em;
+  cursor: pointer;
+  border-radius: .5em;
+  border: none;
+  background-color: rgb(64, 64, 194);
+  color: white;
 }
 
 /* Media Queries */
@@ -283,6 +348,18 @@ font-family: 'Ubuntu', sans-serif; */
     max-width: 90%;
   }
 
+  .create-container {
+    width: 90%;
+  }
+
+  .create-form-container {
+    width: 65%;
+  }
+
+  .create-form-container form {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -308,6 +385,18 @@ font-family: 'Ubuntu', sans-serif; */
 
   .nav ul {
     max-width: 100%;
+  }
+
+  .create-container {
+    width: 100%;
+  }
+
+  .create-form-container {
+    width: 80%;
+  }
+
+  .create-form-container form {
+    width: 100%;
   }
 }
 
@@ -338,6 +427,20 @@ font-family: 'Ubuntu', sans-serif; */
 
   .nav ul li {
     display: none;
+  }
+
+  .create-container {
+    width: 100%;
+  }
+
+  .create-form-container {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .create-form-container form {
+    width: 100%;
+    padding: 1.5em;
   }
 
 }

@@ -42,6 +42,7 @@ function Navbar({ setFormState }) {
           <ul>
             <i onClick={() => setShowMobileNav(true)} id='hamburger-btn' style={{ color: 'white' }} className="fas fa-solid fa-bars"></i>
             <li><Link to='/' >Home</Link></li>
+            <li><Link to='/blog/create' >Create</Link></li>
             <li><Link to='/user/login' onClick={() => setFormState('login')}>Log in</Link></li>
           </ul>
         }
