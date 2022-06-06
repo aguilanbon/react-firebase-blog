@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
+import Create from './pages/Create';
 import Home from './pages/Home';
 import UserForm from './pages/UserForm';
 
