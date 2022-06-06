@@ -7,22 +7,6 @@ function Navbar({ setFormState }) {
   const navRef = useRef(null)
   const [showMobileNav, setShowMobileNav] = useState(false)
 
-  const menuRef = useRef(null)
-
-  useEffect(() => {
-    let handler = document.addEventListener('mousedown', (e) => {
-      if (!menuRef.current.contains(e.target)) {
-        setShowMobileNav(false)
-      }
-    })
-
-    document.addEventListener('mousedown', handler)
-
-    return () => {
-      document.removeEventListener('mousedown', handler)
-    }
-  }, [])
-
 
   useEffect(() => {
     const closeNavOnScreenSiz = () => {
@@ -36,8 +20,8 @@ function Navbar({ setFormState }) {
 
 
   return (
-    <div className="navbar-container" ref={menuRef}>
-      <div className="nav" ref={navRef}>
+    <div className="navbar-container" ref={navRef}>
+      <div className="nav">
         {!showMobileNav &&
           <ul>
             <i onClick={() => setShowMobileNav(true)} id='hamburger-btn' style={{ color: 'white' }} className="fas fa-solid fa-bars"></i>
