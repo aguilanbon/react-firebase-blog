@@ -1,6 +1,4 @@
-import React from 'react'
-
-function Login({ setFormState }) {
+function Login({ setFormState, }) {
     return (
         <form action="">
             <div className="form-group">

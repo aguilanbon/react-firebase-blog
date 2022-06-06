@@ -16,3 +16,5 @@ function Create() {
         </div>
     )
 }
+
+export default Create
