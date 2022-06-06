@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import MobileNav from './MobileNav'
 
-function Navbar({ setFormState, setIsAuth, userSignOut, isAuth }) {
+function Navbar({ setFormState }) {
 
   const navRef = useRef(null)
   const menuRef = useRef(null)
@@ -40,16 +40,8 @@ function Navbar({ setFormState, setIsAuth, userSignOut, isAuth }) {
           <ul>
             <i onClick={() => setShowMobileNav(true)} id='hamburger-btn' style={{ color: 'white' }} className="fas fa-solid fa-bars"></i>
             <li><Link to='/' >Home</Link></li>
-            {!isAuth && <li><Link to='/user/login' onClick={() => setFormState('login')}>Log in</Link></li>}
-            {isAuth &&
-              <>
-                <li><Link to='/blog/create' >Create</Link></li>
-                <li><a style={{ cursor: 'pointer' }} onClick={() => {
-                  setIsAuth(false)
-                  userSignOut()
-                }}>Sign Out</a></li>
-              </>
-            }
+            <li><Link to='/blog/create' >Create</Link></li>
+            <li><Link to='/user/login' onClick={() => setFormState('login')}>Log in</Link></li>
           </ul>
         }
       </div>
