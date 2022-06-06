@@ -5,9 +5,8 @@ import MobileNav from './MobileNav'
 function Navbar({ setFormState }) {
 
   const navRef = useRef(null)
-  const [showMobileNav, setShowMobileNav] = useState(false)
-
   const menuRef = useRef(null)
+  const [showMobileNav, setShowMobileNav] = useState(false)
 
   useEffect(() => {
     let handler = document.addEventListener('mousedown', (e) => {
@@ -34,7 +33,6 @@ function Navbar({ setFormState }) {
     closeNavOnScreenSiz()
   })
 
-
   return (
     <div className="navbar-container" ref={menuRef}>
       <div className="nav" ref={navRef}>
@@ -47,10 +45,11 @@ function Navbar({ setFormState }) {
           </ul>
         }
       </div>
-      {showMobileNav &&
+      {
+        showMobileNav &&
         <MobileNav setFormState={setFormState} setShowMobileNav={setShowMobileNav} />
       }
-    </div>
+    </div >
   )
 }
 

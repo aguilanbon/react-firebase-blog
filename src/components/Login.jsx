@@ -1,6 +1,20 @@
-import React from 'react'
+import { auth, provider } from '../firebase-config'
+import { signInWithPopup } from 'firebase/auth'
+import { useNavigate } from 'react-router-dom'
 
-function Login({ setFormState }) {
+function Login({ setFormState, setIsAuth }) {
+
+    const navigate = useNavigate()
+
+    const signInWithGoogle = () => {
+        signInWithPopup(auth, provider)
+            .then(res => {
+                localStorage.setItem("auth", true)
+                setIsAuth(true)
+                navigate('/')
+            })
+    }
+
     return (
         <form action="">
             <div className="form-group">
@@ -15,6 +29,7 @@ function Login({ setFormState }) {
                 <input type="submit" value="Log In" />
             </div>
             <div className="form-footer">
+                <button onClick={signInWithGoogle}>Sign in with Google</button>
                 <p>Not yet signed up? <span style={linkStyle} onClick={() => setFormState('signup')}>Click Here!</span></p>
             </div>
         </form>
