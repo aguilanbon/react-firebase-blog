@@ -9,7 +9,7 @@ function Create() {
                     <label htmlFor="title">Blog Title</label>
                     <input type="text" name="title" id="" />
                     <label htmlFor="content">Content</label>
-                    <textarea name="content" id="" cols="30" rows="10"></textarea>
+                    <textarea name="content" id="" cols="30" rows="15"></textarea>
                     <input type="submit" value="Add Blog" />
                 </form>
             </div>

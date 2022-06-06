@@ -348,6 +348,18 @@ font-family: 'Ubuntu', sans-serif; */
     max-width: 90%;
   }
 
+  .create-container {
+    width: 90%;
+  }
+
+  .create-form-container {
+    width: 65%;
+  }
+
+  .create-form-container form {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -373,6 +385,18 @@ font-family: 'Ubuntu', sans-serif; */
 
   .nav ul {
     max-width: 100%;
+  }
+
+  .create-container {
+    width: 100%;
+  }
+
+  .create-form-container {
+    width: 80%;
+  }
+
+  .create-form-container form {
+    width: 100%;
   }
 }
 
@@ -403,6 +427,20 @@ font-family: 'Ubuntu', sans-serif; */
 
   .nav ul li {
     display: none;
+  }
+
+  .create-container {
+    width: 100%;
+  }
+
+  .create-form-container {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .create-form-container form {
+    width: 100%;
+    padding: 1.5em;
   }
 
 }
