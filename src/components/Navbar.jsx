@@ -41,17 +41,23 @@ function Navbar({ setFormState, setIsAuth, userSignOut, isAuth }) {
             <i onClick={() => setShowMobileNav(true)} id='hamburger-btn' style={{ color: 'white' }} className="fas fa-solid fa-bars"></i>
             <li><Link to='/' >Home</Link></li>
             {!isAuth && <li><Link to='/user/login' onClick={() => setFormState('login')}>Log in</Link></li>}
-            {isAuth && <li><a style={{ cursor: 'pointer' }} onClick={() => {
-              setIsAuth(false)
-              userSignOut()
-            }}>Sign Out</a></li>}
+            {isAuth &&
+              <>
+                <li><Link to='/blog/create' >Create</Link></li>
+                <li><a style={{ cursor: 'pointer' }} onClick={() => {
+                  setIsAuth(false)
+                  userSignOut()
+                }}>Sign Out</a></li>
+              </>
+            }
           </ul>
         }
       </div>
-      {showMobileNav &&
+      {
+        showMobileNav &&
         <MobileNav setFormState={setFormState} setShowMobileNav={setShowMobileNav} />
       }
-    </div>
+    </div >
   )
 }
 

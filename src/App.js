@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import UserForm from './pages/UserForm';
 import {signOut} from 'firebase/auth'
 import { auth } from './firebase-config'
+import Create from './pages/Create';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Navbar setFormState={setFormState} setIsAuth={setIsAuth} userSignOut={userSignOut} isAuth={isAuth} />
         <Routes>
           <Route path='/' element={<Home />}></Route>
+          {!isAuth && <Route path='/blog/create' element={<Create />}></Route>}
           <Route path='/user/login' element={<UserForm setFormState={setFormState} formState={formState} setIsAuth={setIsAuth}/>}></Route>
         </Routes>
     </div>
